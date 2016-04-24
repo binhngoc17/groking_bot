@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 import time
 from slackclient import SlackClient
+import os
 
-BOT_TOKEN = "<api_token>"
+
+BOT_TOKEN = os.environ.get('API_TOKEN')
 CHANNEL_NAME = "testing"
 
 def main():
